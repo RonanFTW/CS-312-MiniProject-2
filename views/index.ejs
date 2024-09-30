@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 2 Ronan Kent</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Welcome to the Weather Report Page!</h1>
+    </div>
+    <div class="main">
+        <h2>Find Your Area of Interest Here</h2>
+        <div class="Ihateformsnow"> 
+            <form action="/fweather" method="post">
+                <input class="latsearch" type="text" name="lat" placeholder="Enter Lattitude" required>
+                <input class="lonsearch" type="text" name="lon" placeholder="Enter Longitude" required>
+                <input type="submit" value="Search" class="sb">
+            </form>
+            <form action="/del" method="post">
+                <input type="submit" value="Clear" class="db">
+            </form>
+        </div>
+        <div class="allpossibleusefuldata">
+            <b><p>Area: <%= aa %> </b></p>
+            <p>Country: <%= ct %> </p>
+            <p>Current Time: <%= actualdt %></p>
+            <p>Weather: <%= wt %></p> 
+            <p>Temperature: <%= tp %>°C</p>
+            <p>Feels Like: <%= fl %>°C</p>
+            <p>Cloud Cover: <%= cd %>%</p>
+            <p>Windspeed: <%= ws %>m/s In Direction: <%= wd %>°</p>
+            <p>Visibility: <%= vs %> meters</p>
+        </div>
+            <img id="img" src="wimg.jpg" width="500" height="333">
+    </div>
+    <div class="foot">
+        <p><b>Made for CS-312 - SEC001 - Northern Arizona University 
+            - Fall Semester 2024</b></p>
+    </div>
+</body>
+</html>

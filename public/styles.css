@@ -1,0 +1,134 @@
+body {
+    border: solid 15px;
+    border-image: linear-gradient(to bottom, rgb(53, 153, 53), rgb(53, 53, 150)) 1;
+    padding: 15px;
+}
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 15px cornflowerblue;
+    padding: 15px;
+    box-shadow: 20px 20px 50px 15px silver inset;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: ease 1s;
+}
+div:hover {
+    transition-duration: 1s;
+    box-shadow: 20px 20px 50px 15px cornflowerblue inset;
+    opacity: 0.8;
+}
+.head {
+    text-align: center;
+    text-shadow: 1px 1px 4px rgb(10, 161, 151);
+}
+.main h2{
+    text-align: center;
+    text-shadow: 1px 1px 4px rgb(10, 161, 151);
+    grid-area: A;
+}
+.foot {
+    text-align: center;
+}
+.latsearch {
+    border: solid 2px cornflowerblue;
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease 1s;
+    grid-area: a;
+}
+.lonsearch {
+    border: solid 2px cornflowerblue;
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease 1s;
+    grid-area: b;
+}
+.sb {
+    border: solid 2px rgb(53, 153, 53);
+    width: 102%;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease 1s;
+    grid-area: c;
+}
+.db {
+    border: solid 2px rgb(153, 53, 53);
+    width: 102%;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease 1s;
+    grid-area: d;
+}
+.latsearch:hover {
+    transition-duration: 1s;
+    background-color: rgb(53, 53, 150);
+    color: white;
+    font: bold;
+}
+.lonsearch:hover {
+    transition-duration: 1s;
+    background-color: rgb(53, 53, 150);
+    color: white;
+    font: bold;
+}
+.sb:hover {
+    transition-duration: 1s;
+    background-color: rgb(53, 153, 53);
+    color: white;
+    font: bold;
+}
+.db:hover {
+    transition-duration: 1s;
+    background-color: rgb(153, 53, 53);
+    color: white;
+    font: bold;
+}
+.main {
+    display: grid;
+    grid-template-areas: 
+    "A A"
+    "B C"
+    "D C";
+    gap: 15px;
+}
+.Ihateformsnow {
+    grid-area: B;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    border: none;
+    background: none;
+    box-shadow: none;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: fit-content;
+}
+.allpossibleusefuldata {
+    grid-area: C;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.Ihateformsnow:hover {
+    box-shadow: 20px 20px 50px 15px silver inset;
+    opacity: 1;
+}
+.allpossibleusefuldata:hover {
+    box-shadow: 20px 20px 50px 15px silver inset;
+    opacity: 1;
+}
+.Ihateformsnow form {
+    display: contents;
+}
+#img {
+    grid-area: D;
+    margin-left: 20%;
+    padding-bottom:  25px;
+}
